@@ -1,0 +1,53 @@
+Please make sure your variable naming follows the convention below.
+If there is anything missing, inform me.
+
+Inside *.java:
+  Use private/public identifiers.
+  Everything variable should be camelCased with the exception of constants.
+  If the variable is reference to some views/layouts, use the camelCased
+  version of its id, ignore the activity/fragment specifier and replace the abbreviation of the type with the full name. If anything induces unclearness, clearly state it with comments, and use the naming that you fell clear.
+  constants should be private/public static final, and the naming uppercased,
+  space separated with underlines.
+  e.g.:
+  private int userChoice;
+  private TextView textViewLogin; <--id: activity_main_tv_login;
+  private static final int SPEAKER_INTENT_RETURN_CODE = 101;
+
+Inside layouts:
+  For layout itself, name it with activity/fragment_<NAME>.xml
+  For the ids, name them with activity/fragment_<NAME>_<TYPE>_<DESCRIPTION>.
+  Use abbreviation for types.
+  e.g.:
+  activity_main.xml
+  activity_main_tv_login
+  fragment_card_display_btn_return
+  A short list of abbreviations:
+    btn---Button
+    tv----TextView
+    et----EditText
+    rv----RecyclerView
+    ll----LinearLayout
+    rl----RelativeLayout
+    fl----FrameLayout
+    cv----CardView
+    nb----NavigationBar
+  If there is anything else needed, inform me.
+
+For colors:
+  Name it with color_<DESCRIPTION>_<COLOR>
+  e.g.:
+  color_main_activity_button_logout_blue
+  color_application_default_text_transparent_red
+
+For strings:
+  Name it with string_<TYPE>_<USAGE/DESCRIPTION>
+  e.g.:
+  string_notification_not_logged_in
+  string_error_no_network
+
+For drawables:
+  Name images with <IMAGE_SUFFIX>_<DESCRIPTION>
+  Name custom drawables with drawable_<DESCRIPTION>
+  e.g.:
+  png_bus_small
+  drawable_main_activity_button_logout_background
