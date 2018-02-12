@@ -103,6 +103,8 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+
+    //Put all map related functions below
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mainMap = googleMap;
