@@ -14,8 +14,8 @@ Inside *.java:
   private static final int SPEAKER_INTENT_RETURN_CODE = 101;
 
 Inside layouts:
-  For layout itself, name it with activity/fragment_<NAME>.xml
-  For the ids, name them with activity/fragment_<NAME>_<TYPE>_<DESCRIPTION>.
+  For layout itself, name it with activity/fragment/content/app_bar/_<NAME>.xml
+  For the ids, name them with activity/fragment_<NAME>_<TYPE>_[DESCRIPTION].
   Use abbreviation for types.
   e.g.:
   activity_main.xml
@@ -29,8 +29,11 @@ Inside layouts:
     ll----LinearLayout
     rl----RelativeLayout
     fl----FrameLayout
+    dl----DrawerLayout
     cv----CardView
     nb----NavigationBar
+    fab---FloatingActionButton
+    map---GoogleMap[Fragment]
   If there is anything else needed, inform me.
 
 For colors:
